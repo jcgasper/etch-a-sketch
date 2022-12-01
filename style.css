@@ -1,0 +1,41 @@
+* {
+    background-color: grey;
+}
+
+header {
+position: absolute;    
+top: 0;
+text-align: center;
+width: 100%;
+}
+footer {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+
+}
+
+div {
+
+    
+}
+.gridContainer {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 550px;
+    background-color: black;
+    margin: auto;
+    padding-top: 50px;
+    
+}
