@@ -3,10 +3,12 @@
 }
 
 header {
-position: absolute;    
+
 top: 0;
 text-align: center;
 width: 100%;
+font-size: 36px;
+
 }
 footer {
     position: absolute;
@@ -25,6 +27,8 @@ div {
     width: 500px;
     height: 500px;
     background-color: white;
+    border: solid black;
+    
 
 }
 
@@ -34,8 +38,15 @@ div {
     align-items: center;
     width: 550px;
     height: 550px;
-    background-color: black;
+
+
     margin: auto;
     padding-top: 50px;
     
+}
+
+.genBox {
+background-color: white;
+float: left;
+border: solid black;
 }
