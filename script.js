@@ -1,14 +1,16 @@
 const sizeBtn = document.querySelector(".sizeBtn");
 const gridContainer = document.querySelector(".gridContainer");
 
-
+    //set up size btn
 sizeBtn.addEventListener("click", function() {
-let x = prompt("Enter num of n by n grid");
+let x = prompt("Enter num of n by ngit  grid");
 //clear existing grid
 resetGrid();
 generateGrid(x);
 
 });
+
+        //gen grid func
 function generateGrid(size) {
         //set up grid dimensions 
         if (size > 100) {
@@ -20,15 +22,21 @@ function generateGrid(size) {
 
         for (let i = 0; i < size*size; i++) {
     let box = document.createElement("div");
-    
+    box.addEventListener('mouseover',changeColor);
+
     box.classList.add("genBox");
     gridContainer.append(box);
         }
 
 }
-
+    //reset grid func
 function resetGrid() {
     gridContainer.innerHTML = "";
+}
+
+function changeColor(e) {
+    e.target.style.backgroundColor = "black";
+    
 }
 
 
