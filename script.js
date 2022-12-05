@@ -1,4 +1,5 @@
 const sizeBtn = document.querySelector(".sizeBtn");
+const clearBtn = document.querySelector(".clearBtn")
 const gridContainer = document.querySelector(".gridContainer");
 
     //set up size btn
@@ -9,6 +10,14 @@ resetGrid();
 generateGrid(x);
 
 });
+
+//set up clear button
+
+clearBtn.addEventListener('click',function() { 
+    resetGrid();
+    generateGrid(64);
+})
+
 
         //gen grid func
 function generateGrid(size) {

@@ -1,5 +1,6 @@
 * {
-    background-color: grey;
+    background-color: rgb(212, 201, 201);
+    
 }
 
 header {
@@ -46,4 +47,22 @@ footer {
 background-color: white;
 float: left;
 
+}
+ button {
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+.buttonDiv {
+   position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    margin-left: 15px;
+    gap: 15px;
+}
+.sizeBtn {
+    
+    
 }
