@@ -11,17 +11,16 @@ width: 100%;
 font-size: 36px;
 
 }
+
+
 footer {
-    position: absolute;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
     bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
     width: 100%;
-    padding: 10px;
-    font-size: 20px;
+    height: 40px;
+    text-align: center;
+    margin: auto;
 
 }
 
