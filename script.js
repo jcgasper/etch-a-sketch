@@ -18,6 +18,9 @@ clearBtn.addEventListener('click',function() {
     generateGrid(64);
 })
 
+let mouseDown = false;
+document.body.onmousedown = () => (mouseDown = true);
+document.body.onmouseup = () => (mouseDown = false);
 
         //gen grid func
 function generateGrid(size) {
@@ -32,6 +35,7 @@ function generateGrid(size) {
         for (let i = 0; i < size*size; i++) {
     let box = document.createElement("div");
     box.addEventListener('mouseover',changeColor);
+    box.addEventListener('mousedown',changeColor);
 
     box.classList.add("genBox");
     gridContainer.append(box);
@@ -44,6 +48,8 @@ function resetGrid() {
 }
 
 function changeColor(e) {
+    if (e.type === 'mouseover' && !mouseDown) return;
+
     e.target.style.backgroundColor = "black";
     
 }
